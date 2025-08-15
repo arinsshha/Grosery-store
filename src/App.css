@@ -1,0 +1,318 @@
+/* App.css - Clean and Responsive Design */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255) !important;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #2d3436;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 40px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.product {
+  background: rgb(0, 205, 212);
+  border-radius: 8px;
+  color: black;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+/*No effect*/ 
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.product h2 {
+  font-size: 1.0rem;
+  margin: 0.5rem 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-left: 1.1rem;
+  color: #27ae60;
+  text-align: left; /* keeps price centered */
+  width: auto;
+}
+
+.buy-btn {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  width:auto;
+  cursor: pointer;
+}
+
+.buy-btn i {
+  margin-right: 0.5rem;
+}
+
+.about,.support,.social {
+  margin-top: 2rem;
+  color: black;
+  background: #f0efef;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.267);
+}
+.footer {
+  margin-top: 80px;
+  background-color: #f0efef;
+  color: #1b1b1b;
+  font-size: 14px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.267);
+}
+
+.footer p {
+  color: #1b1b1b;
+  margin: 0.5rem 0;
+}
+
+.footer h3,
+.footer h1 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.app-logo {
+  margin-top: -10px;
+}
+
+.app-logo img {
+  width: 40%;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.85rem;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+.footer-col-3 img,
+.footer-col-4 img {
+  transition: transform 0.3s ease;
+}
+
+.footer-col-3 img:hover,
+.footer-col-4 img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 480px) {
+  .buy-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .product img {
+    height: 150px;
+  }
+}
+.support h4{
+  margin-top: 50px;
+  text-align: center;
+  color: #707070;
+}
+
+
+/* Modal overlay (background) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* details page css */
+
+/* Modal content box */
+.modal-content {
+  background: #9fefc0;
+  padding: 2rem;
+  color: black;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close button (X) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 480px) {
+  .quantity-control {
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .qty-btn {
+    font-size: 1rem;
+    min-width: 32px;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .qty-label {
+    font-size: 0.9rem;
+  }
+
+  .qty-number {
+    font-size: 0.95rem;
+  }
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
