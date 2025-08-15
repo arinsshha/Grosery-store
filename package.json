@@ -1,7 +1,7 @@
 {
-  "name": "e-commerce-static",
+  "name": "grocery-store",
   "version": "0.0.0",
-  "homepage": "https://github.com/desuraj/e-commerce-static",
+  "homepage": "https://github.com/Arin/e-commerce-grocery",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
